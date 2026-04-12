@@ -1,0 +1,1 @@
+INSERT INTO public.users (id, email, role, status) VALUES ('9e1c5706-9e8e-4aa2-bb87-7bc4adb5c7c9', 'victoria@inspire-live.com', 'admin', 'approved') ON CONFLICT (id) DO UPDATE SET role = 'admin', status = 'approved';

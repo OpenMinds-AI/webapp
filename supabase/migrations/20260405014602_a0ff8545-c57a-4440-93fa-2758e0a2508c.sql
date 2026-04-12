@@ -1,0 +1,1 @@
+UPDATE public.talents SET status = 'approved', community_code = '#0006' WHERE email = 'victoria@inspire-live.com';

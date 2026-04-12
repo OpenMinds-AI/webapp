@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5.1%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5.1%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 258 44% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 249 62% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 63%;
+
+    --accent: 258 44% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 100% / 0.08;
+    --input: 0 0% 100% / 0.08;
+    --ring: 258 44% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 3%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 258 44% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 100% / 0.08;
+    --sidebar-ring: 258 44% 45%;
+
+    --glow-primary: 258 44% 45%;
+    --glow-secondary: 249 62% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .glow-violet {
+    box-shadow: 0 0 24px hsla(249, 62%, 65%, 0.3);
+  }
+
+  .glow-violet-lg {
+    box-shadow: 0 0 48px hsla(249, 62%, 65%, 0.2);
+  }
+
+  .card-surface {
+    background: hsl(0 0% 5.1%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .text-muted-gray {
+    color: #A0A0A0;
+  }
+
+  .text-shadow-dark {
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.9);
+  }
+}
+
+/* Fix browser autofill light blue background */
+.autofill-fix:-webkit-autofill,
+.autofill-fix:-webkit-autofill:hover,
+.autofill-fix:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #0D0D0D inset !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  background-color: #0D0D0D !important;
+  caret-color: #FFFFFF;
+}
