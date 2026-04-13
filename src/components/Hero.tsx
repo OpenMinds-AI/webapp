@@ -84,11 +84,11 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="flex items-center justify-center gap-6 mt-10 flex-wrap"
         >
-          <AnimatedCounter target={builders} label="builders" />
+          <AnimatedCounter target={builders} label="People" />
           <span className="text-muted-foreground/30">·</span>
-          <AnimatedCounter target={openRequests} label="projects" />
+          <AnimatedCounter target={openRequests} label="Projects" />
           <span className="text-muted-foreground/30">·</span>
-          <AnimatedCounter target={trustedTools} label="partners" />
+          <AnimatedCounter target={trustedTools} label="Partners" />
         </motion.div>
       </div>
     </section>

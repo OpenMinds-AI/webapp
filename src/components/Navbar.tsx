@@ -18,7 +18,7 @@ const Navbar = () => {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
-  const links = ["About", "Talents", "Projects", "Partners"];
+  const links = ["About", "Talents", "Projects", "Partners", "Founders", "Events"];
 
   const handleNavClick = (hash: string) => {
     setMobileOpen(false);

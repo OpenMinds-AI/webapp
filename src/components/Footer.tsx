@@ -1,7 +1,7 @@
 
 
 const Footer = () => {
-  const navLinks = ["About", "Talents", "Projects", "Partners"];
+  const navLinks = ["About", "Talents", "Projects", "Partners", "Founders", "Events"];
 
   return (
     <footer className="relative z-10" style={{ background: "transparent", borderTop: "1px solid #1A1A1A" }}>
